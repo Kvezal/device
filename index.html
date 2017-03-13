@@ -16,10 +16,10 @@
           <input class="form-search__input" type="search" name="search" id="search-field">
           <button class="form-search__btn" type="submit">Найти</button>
         </form>
-        <div class="user-block">
+        <section class="user-block">
           <ul class="user-block__list">
             <li class="user-block__item">
-              <a class="user-block__link  user-block__link--login" href="#">Войти</a>
+              <a class="user-block__link  user-block__link--login  user-block__link--login-left" href="#">Войти</a>
             </li>
             <li class="user-block__item">
               <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
@@ -28,7 +28,7 @@
               <a class="user-block__link  user-block__link--cart" href="#">Корзина</a>
             </li>
           </ul>
-        </div>
+        </section>
       </div>
       <nav class="main-menu">
         <ul class="main-nav">
@@ -134,27 +134,27 @@
       </section>
       
       <section class="categories">
-        <a href="" class="categories__link  categories__link--virtual-reality">
+        <a href="#" class="categories__link  categories__link--virtual-reality">
           <img src="" width="" height="" alt="Виртуальная реальность">
           <span class="categories__name">Виртуальная реальность</span>
         </a>
-        <a href="" class="categories__link  categories__link--monopods">
+        <a href="#" class="categories__link  categories__link--monopods">
           <img src="" width="" height="" alt="Моноподы для селфи">
           <span class="categories__name">Моноподы для селфи</span>
         </a>
-        <a href="" class="categories__link  categories__link--action-cameras">
+        <a href="#" class="categories__link  categories__link--action-cameras">
           <img src="" width="" height="" alt="Экшн-камеры">
           <span class="categories__name">Экшн-камеры</span>
         </a>
-        <a href="" class="categories__link  categories__link--fitness-bracelets">
+        <a href="#" class="categories__link  categories__link--fitness-bracelets">
           <img src="" width="" height="" alt="Фитнесс браслеты">
           <span class="categories__name">Фитнесс браслеты</span>
         </a>
-        <a href="" class="categories__link  categories__link--watches">
+        <a href="#" class="categories__link  categories__link--watches">
           <img src="" width="" height="" alt="Умные часы">
           <span class="categories__name">Умные часы</span>
         </a>
-        <a href="" class="categories__link  categories__link--quadrocopters">
+        <a href="#" class="categories__link  categories__link--quadrocopters">
           <img src="" width="" height="" alt="Квадрокоптеры">
           <span class="categories__name">Квадрокоптеры</span>
         </a>
@@ -228,7 +228,7 @@
       </section>
       
       <section class="info">
-        <div class="info__about-us">
+        <section class="info__about-us">
           <h2 class="info__title">О нас</h2>
           <p class="info__text">
             Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас
@@ -242,21 +242,56 @@
             <li class="info__transport-item">ЖелДорЭкспедиция</li>
           </ul>              
           <a class="info__btn  btn" href="#">Подробнее о нас</a>
-        </div>
+        </section>
         
-        <div class="info__contacts">
+        <section class="info__contacts">
           <h2 class="info__title">Контакты</h2>
           <p class="info__text">
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
           <div class="map" id="map"></div>
           <a class="info__btn  btn" href="#">Напишите нам</a>
-        </div>
+        </section>
       </section>
     </main>
     
     
     
-    <footer class="page-footer"></footer>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper-left">
+        <p class="page-footer__logo">Device</p>
+        <p class="page-footer__address">г. Москва, ул. Строителей, 15</p>        
+      </div>
+      
+      <div class="page-footer__wrapper-right">
+        <section class="user-block">
+          <ul class="user-block__list">
+            <li class="user-block__item">
+              <a class="user-block__link  user-block__link--login" href="#">Войти</a>
+            </li>
+            <li class="user-block__item">
+              <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
+            </li>
+            <li class="user-block__item">
+              <a class="user-block__link  user-block__link--cart" href="#">Корзина</a>
+            </li>
+          </ul>
+        </section>
+        <section class="page-footer__info">
+          <a class="page-footer__info-link" href="#">Доставка</a>
+          <a class="page-footer__info-link" href="#">Гарантия</a>
+          <a class="page-footer__info-link" href="#">Контакты</a>
+        </section>
+        <p class="page-footer__tel">Тел.: +7 (495) 495-95-95</p>
+        <p class="footer-social">
+          <a href="#" class="footer-social__btn  footer-social__btn--fb">FaceBook</a>
+          <a href="#" class="footer-social__btn  footer-social__btn--inst">Instagram</a>
+          <a href="#" class="footer-social__btn  footer-social__btn--tw">Twitter</a>
+        </p>
+        <div class="page-footer__created">
+          <a class="page-footer__created-link" href="#"><img src="" width="" height="" alt="Логотип htmlacademy"></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
