@@ -1,45 +1,34 @@
+"use strict";
+
 var gulp = require("gulp");
 var less = require("gulp-less");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var server = require("browser-sync");
+var server = require("browser-sync").create();
 
-
-
-gulp.task("default", function() {
+gulp.task("style", function() {
   gulp.src("less/style.less")
-  .pipe(plamber())
-  .pipe(less())
-  .pipe(postcss([
-    autoprefixer({browsers: [
-      "last 1 version",
-      "last 2 Chrome versions",
-      "last 2 Firefox versions",
-      "last 2 Opera versions",
-      "last 2 Edge versions"
-    ]})    
-  ]))
-  .pipe(gulp.dest("css"));
-  .pipe(server.reload({stream: true}));
+    .pipe(plumber())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer({browsers: [
+        "last 2 versions"
+      ]})
+    ]))
+    .pipe(gulp.dest("css"))
+    .pipe(server.stream());
 });
 
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: "."
+    server: ".",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
   });
-  
+
   gulp.watch("less/**/*.less", ["style"]);
-  gulp.watch("*.html")
-    .on("change", server.reload);
-  
-  
-});
-  
-  
-  
-  
-  
-  
-  .pipe(gulp.dest('css'));
+  gulp.watch("*.html").on("change", server.reload);
 });
