@@ -1,0 +1,20 @@
+.catalog {
+  box-sizing: border-box;
+  margin-top: 69px;
+  .clearfix();
+  
+  &__item {
+    float: left;
+    width: 360px;
+    min-height: 495px;
+    margin-right: 40px;
+    
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+    
+    &:nth-of-type(n+3) {
+      margin-top: 10px;
+    }
+  }
+}
