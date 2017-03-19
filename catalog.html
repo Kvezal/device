@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Device | Каталог</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   
   <body>
@@ -31,22 +32,22 @@
           </ul>
         </section>
       </div>
-      <nav class="main-menu">
-        <ul class="main-nav">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link  main-nav__link--catalog" href="#">Каталог товаров</a>
-            <ul class="sub-menu">
-              <li class="sub-menu__item">
-                <a class="sub-menu__link" href="#">Виртуальная реальность</a>
-                <a class="sub-menu__link" href="#">Моноподы для селфи</a>
-                <a class="sub-menu__link" href="#">Экшн-камеры</a>
+            <ul class="sub-nav">
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Виртуальная реальность</a>
+                <a class="sub-nav__link" href="#">Моноподы для селфи</a>
+                <a class="sub-nav__link" href="#">Экшн-камеры</a>
               </li>
-              <li class="sub-menu__item">
-                <a class="sub-menu__link" href="#">Фитнесс-браслеты</a>
-                <a href="" class="sub-menu__link">Умные часы</a>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Фитнесс-браслеты</a>
+                <a href="" class="sub-nav__link">Умные часы</a>
               </li>
-              <li class="sub-menu__item">
-                <a class="sub-menu__link" href="#">Квадрокоптеры</a>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
           </li>
@@ -68,24 +69,23 @@
     <main class="main">
       <div class="main__top">
         <h1 class="main__title">Моноподы для селфи</h1>
-        <ul class="breadcrambs">
-          <li class="breadcrambs__item">
-            <a href="#" class="breadcrambs__link">Главная</a>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Главная</a>
           </li>
-          <li class="breadcrambs__item">
-            <a href="#" class="breadcrambs__link">Каталог товаров</a>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Каталог товаров</a>
           </li>
-          <li class="breadcrambs__item">
-            <a href="#" class="breadcrambs__link">Моноподы для селфи</a>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Моноподы для селфи</a>
           </li>
         </ul>
       </div>
       <section class="content">
-        <div class="content__wrapper-left">                 
-          <h2 class="content__title">Фильтр:</h2>
-                    
-          <aside class="filter-bar">
-            <form class="filter-bar__form" action="catalog.html">
+        <div class="content__wrapper">
+          <div class="content__wrapper-left"> 
+            <h2 class="content__title">Фильтр:</h2>
+            <form class="filter-bar" action="catalog.html">
               <fieldset class="filter-bar__price">
                 <h3 class="filter-bar__title">Стоимость</h3>
                 <div class="price-range-control">
@@ -135,66 +135,67 @@
                 </p>
               </fieldset>
               <button class="filter-bar__btn  btn" type="submit">Показать</button>
-            </form>
-          </aside>       
-        </div>
+            </form>    
+          </div>         
         
-        <div class="content__wrapper-right">
-          <section class="sorting">
-            <h2 class="sorting__title">Сортировка:</h2>
-            <ul class="sorting__list">
-              <li class="sorting__item"><a class="sorting__link" href="#">По цене</a></li>
-              <li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
-              <li class="sorting__item"><a class="sorting__link" href="#">По популярности</a></li>
-              <li class="sorting__item"><a class="sorting__link  sorting__link--arrow-top" href="#">По убыванию</a></li>
-              <li class="sorting__item"><a class="sorting__link  sorting__link--arrow-bottom" href="#">По возрастанию</a></li>
-            </ul>
-          </section>
-          <section class="catalog">
-            <article class="catalog__item">
-              <img src="" width="360" height="380" alt="Любительская селфи-палка">
-              <div class="catalog__overlay">
-                <button class="catalog__cart-btn  btn">В корзину</button>
-                <button class="catalog__compare-btn">Добавить к сравнению</button>
-              </div>
-              <a href="" class="catalog__link">Любительская селфи-палка</a>
-              <span class="catalog__price">500 руб.</span>
-            </article>
-            <article class="catalog__item">
-              <img src="" width="360" height="380" alt="Профессиональная селфи-палка">
-              <div class="catalog__overlay">
-                <button class="catalog__cart-btn  btn">В корзину</button>
-                <button class="catalog__compare-btn">Добавить к сравнению</button>
-              </div>
-              <a href="" class="catalog__link">Профессиональная селфи-палка</a>
-              <span class="catalog__price">1500 руб.</span>
-            </article>
-            <article class="catalog__item">
-              <img src="" width="360" height="380" alt="Непотопляемая селфи-палка">
-              <div class="catalog__overlay">
-                <button class="catalog__cart-btn  btn">В корзину</button>
-                <button class="catalog__compare-btn">Добавить к сравнению</button>
-              </div>
-              <a href="" class="catalog__link">Непотопляемая селфи-палка</a>
-              <span class="catalog__price">2500 руб.</span>
-            </article>
-            <article class="catalog__item">
-              <img src="" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-              <div class="catalog__overlay">
-                <button class="catalog__cart-btn  btn">В корзину</button>
-                <button class="catalog__compare-btn">Добавить к сравнению</button>
-              </div>
-              <a href="" class="catalog__link">Селфи-палка «Следуй за мной»</a>
-              <span class="catalog__price">4900 руб.</span>
-            </article>
-          </section>
-          <div class="pagination">
-            <a class="pagination__link  pagination__link--prew" href="#">Назад</a>
-            <a class="pagination__link" href="#">1</a>
-            <a class="pagination__link" href="#">2</a>
-            <a class="pagination__link" href="#">3</a>
-            <a class="pagination__link  pagination__link--next" href="#">Вперед</a>
-          </div>
+          <div class="content__wrapper-right">
+            <section class="sorting">
+              <h2 class="sorting__title">Сортировка:</h2>
+              <ul class="sorting__list">
+                <li class="sorting__item"><a class="sorting__link" href="#">По цене</a></li>
+                <li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
+                <li class="sorting__item"><a class="sorting__link" href="#">По популярности</a></li>
+                <li class="sorting__item"><a class="sorting__link  sorting__link--arrow-top" href="#">По убыванию</a></li>
+                <li class="sorting__item"><a class="sorting__link  sorting__link--arrow-bottom" href="#">По возрастанию</a></li>
+              </ul>
+            </section>
+            
+            <section class="catalog">
+              <article class="catalog__item">
+                <img src="" width="360" height="380" alt="Любительская селфи-палка">
+                <div class="catalog__overlay">
+                  <button class="catalog__cart-btn  btn">В корзину</button>
+                  <button class="catalog__compare-btn">Добавить к сравнению</button>
+                </div>
+                <a href="" class="catalog__link">Любительская селфи-палка</a>
+                <span class="catalog__price">500 руб.</span>
+              </article>
+              <article class="catalog__item">
+                <img src="" width="360" height="380" alt="Профессиональная селфи-палка">
+                <div class="catalog__overlay">
+                  <button class="catalog__cart-btn  btn">В корзину</button>
+                  <button class="catalog__compare-btn">Добавить к сравнению</button>
+                </div>
+                <a href="" class="catalog__link">Профессиональная селфи-палка</a>
+                <span class="catalog__price">1500 руб.</span>
+              </article>
+              <article class="catalog__item">
+                <img src="" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <div class="catalog__overlay">
+                  <button class="catalog__cart-btn  btn">В корзину</button>
+                  <button class="catalog__compare-btn">Добавить к сравнению</button>
+                </div>
+                <a href="" class="catalog__link">Непотопляемая селфи-палка</a>
+                <span class="catalog__price">2500 руб.</span>
+              </article>
+              <article class="catalog__item">
+                <img src="" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                <div class="catalog__overlay">
+                  <button class="catalog__cart-btn  btn">В корзину</button>
+                  <button class="catalog__compare-btn">Добавить к сравнению</button>
+                </div>
+                <a href="" class="catalog__link">Селфи-палка «Следуй за мной»</a>
+                <span class="catalog__price">4900 руб.</span>
+              </article>
+            </section>
+            <div class="pagination">
+              <a class="pagination__link  pagination__link--prew" href="#">Назад</a>
+              <a class="pagination__link" href="#">1</a>
+              <a class="pagination__link" href="#">2</a>
+              <a class="pagination__link" href="#">3</a>
+              <a class="pagination__link  pagination__link--next" href="#">Вперед</a>
+            </div>
+          </div>        
         </div>
       </section>
     </main>    
@@ -207,8 +208,21 @@
         <p class="page-footer__address">г. Москва, ул. Строителей, 15</p>        
       </div>
       
+      <div class="page-footer__wrapper-center"> 
+        <section class="page-footer__info">
+          <a class="page-footer__info-link" href="#">Доставка</a>
+          <a class="page-footer__info-link" href="#">Гарантия</a>
+          <a class="page-footer__info-link" href="#">Контакты</a>
+        </section>
+        <p class="footer-social">
+          <a href="#" class="footer-social__btn  footer-social__btn--fb">FaceBook</a>
+          <a href="#" class="footer-social__btn  footer-social__btn--inst">Instagram</a>
+          <a href="#" class="footer-social__btn  footer-social__btn--tw">Twitter</a>
+        </p>
+      </div> 
+      
       <div class="page-footer__wrapper-right">
-        <section class="user-block">
+        <section class="user-block user-block--narrow">
           <ul class="user-block__list">
             <li class="user-block__item">
               <a class="user-block__link  user-block__link--login" href="#">Выйти</a>
@@ -220,18 +234,8 @@
               <a class="user-block__link  user-block__link--cart" href="#">Корзина</a>
             </li>
           </ul>
-        </section>
-        <section class="page-footer__info">
-          <a class="page-footer__info-link" href="#">Доставка</a>
-          <a class="page-footer__info-link" href="#">Гарантия</a>
-          <a class="page-footer__info-link" href="#">Контакты</a>
-        </section>
-        <p class="page-footer__tel">Тел.: +7 (495) 495-95-95</p>
-        <p class="footer-social">
-          <a href="#" class="footer-social__btn  footer-social__btn--fb">FaceBook</a>
-          <a href="#" class="footer-social__btn  footer-social__btn--inst">Instagram</a>
-          <a href="#" class="footer-social__btn  footer-social__btn--tw">Twitter</a>
-        </p>
+        </section>        
+        <p class="page-footer__tel">Тел.: +7 (495) 495-95-95</p>        
         <div class="page-footer__created">
           <a class="page-footer__created-link" href="#"><img src="" width="" height="" alt="Логотип htmlacademy"></a>
         </div>
