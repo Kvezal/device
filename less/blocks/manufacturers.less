@@ -1,9 +1,9 @@
 .manufacturers {
-  .clearfix();
   width: 1160px;
   margin: 94px auto auto;
   
-  &__list {    
+  &__list {
+  .clearfix();
   .list-clear-indent();
   }
   
@@ -15,6 +15,45 @@
     
     &:nth-of-type(4n) {
       margin-right: 0;
+    }
+  }
+  
+  &__link {
+    position: relative;
+    
+    display: block;
+        
+    &::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 100px;
+      
+      visibility: hidden;
+      opacity: 0;
+      
+      transition-duration: .3s;
+    }
+    
+    &:hover::before {      
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    &--logo-1:hover::before {
+      background: url(../img/logo-1-hover.png);
+    }
+    
+    &--logo-2:hover::before {
+      background: url(../img/logo-2-hover.png);
+    }
+    
+    &--logo-3:hover::before {
+      background: url(../img/logo-3-hover.png);
+    }
+    
+    &--logo-4:hover::before {
+      background: url(../img/logo-4-hover.png);
     }
   }
 }

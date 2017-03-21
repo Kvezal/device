@@ -1,0 +1,44 @@
+.btn {
+  position: relative;
+  
+  display: inline-block;
+  box-sizing: content-box;
+  margin-left: 4px;
+  padding-right: 41px;
+  padding-left: 42px;
+  
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3.7px;
+  
+  transition-duration: .2s;
+  
+  &:active {
+    color: rgba(0, 0, 0, .3);
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: -1;
+    
+    width: 100%;
+    height: 8px;
+    
+    background-color: #f0c52e;
+  
+    transition-duration: .2s;
+  }
+  
+  &:hover::before {
+    height: 200%;
+    transform: translateY(-40%);
+  }
+}

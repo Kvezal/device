@@ -9,19 +9,34 @@
   
   background-color: rgba(240, 197, 46, .5);
   
+  &--inner {
+    height: 186px;
+  }
+  
   &__logo {
     position: absolute;
     top: -24px;
     left: 57px;
+    
+    &:hover a {
+      color: #464646; 
+    }
+    
+    &:active a {
+      color: #666666; 
+    }
   }
   
   &__title {    
-    font-weight: 600;
+    font-weight: 800;
     font-size: 48px;
     line-height: 48px;
     font-family: "Gilroy", "Arial", sans-serif;
     color: #000000;
     text-transform: uppercase;
+    text-decoration: none;
+    
+    transition-duration: .2s;
   }
   
   &__wrapper-top {

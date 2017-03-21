@@ -1,8 +1,55 @@
-.sub-nav {
+.sub-nav {  
+  .list-clear-indent();
+  
   position: absolute;
   top: 85px;
+  left: -60px;
+  z-index: 1;
   
-  display: none;
-  width: 100%;
+  box-sizing: border-box;
+  width: 1160px;
   height: 131px;
+  padding-left: 60px;
+  
+  font-size: 15px;
+  line-height: 36px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  
+  background-color: #f7e296;
+  visibility: hidden;
+  opacity: 0;
+  
+  transition-duration: .3s;
+  
+  &:hover {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  &__item {
+    display: inline-block;
+    width: 200px;
+    
+    vertical-align: top;
+    
+    &:first-of-type {      
+      margin-right: 40px;
+    }
+  }
+  
+  &__link {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    
+    transition-duration: .2s;
+    
+    &:hover {
+      opacity: .6;
+    }
+    
+    &:active {
+      opacity: .3;
+    }
+  }
 }

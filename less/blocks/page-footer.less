@@ -1,7 +1,13 @@
 .page-footer {
-  width: 1160px;
-  margin: auto;
-  .clearfix();
+  width: 100%;
+  
+  background-color: #464646;
+  
+  &__wrapper {
+    width: 1160px;
+    margin: auto;
+    .clearfix();
+  }
   
   &__wrapper-left {
     float: left;
@@ -11,36 +17,129 @@
   }
   
   &__logo {
-    margin: 0;
+    position: relative;
+    
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 0;
+    
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 48px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    color: #f7e184;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    transition-duration: .2s;
+    
+    &:hover {
+      color: #f0c52e; 
+    }
+    
+    &:active {
+      color: #f0c52e; 
+      opacity: .3;
+    }
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -136px;
+      left: 0px;
+      
+      width: 80px;
+      height: 7px;
+      
+      background-color: #f7e184;
+    }
   }
   
   &__address {
+    margin-top: 22px;
+    
+    color: #ffffff;
   }
   
   &__wrapper-center {
     float: left;
     width: 440px;
-    min-height: 323px;
-    margin-right: 35px;
+    min-height: 189px;
+    margin-right: 30px;
+    padding-top: 133px;;
   }
   
   &__info {
     width: 440px;
     float: left;
+    
+    &-link {
+      margin-left: 34px;
+      
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 18px;
+      font-family: 'Gilroy', 'Areal', sans-serif;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 3.7px;
+      
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
   }
   
   &__wrapper-right {
     float: right;
-    width: 325px;
-    min-height: 323px;
+    width: 330px;
+    min-height: 189px;
+    padding-top: 54px;
   }
   
   &__tel {
-    float: right;
+    clear: both;
     margin: 0;
+    margin-top: 76px;
+    
+    color: #ffffff;
+    text-align: right;
   }
   
   &__created {
     float: right;
+    margin-top: 63px;
+    padding: 0;    
+  } 
+  
+  &__created-link {
+    position: relative;
+    display: block;
+    width: 27px;
+    height: 34px;
+    
+    font-size: 0;
+    line-height: 0;
+    
+    &:hover img {
+      display: none;
+    }
+    
+    &:hover::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      
+      width: 27px;
+      height: 34px;
+      
+      background: url(../img/sprites.png) no-repeat 0 -100px;
+    }
+    
+    &:active::before {
+      opacity: .3;
+    }
   }
 }
