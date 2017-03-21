@@ -8,20 +8,21 @@
   </head>
   
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--inner">
       <div class="page-header__logo">
-        <a class="page-header__title" href="#">Device</a>
+        <b class="page-header__title">Device</b>
       </div>
       <div class="page-header__wrapper-top">
         <form class="form-search" action="index.html">
-          <input class="form-search__input" type="search" name="search" id="search-field">
+          <input class="form-search__input" type="search" name="search" id="search-field" required>
+          <label class="form-search__label" for="search-field">Поиск по сайту</label>
           <button class="form-search__btn" type="submit">Найти</button>
         </form>
         <section class="user-block">
           <ul class="user-block__list">
             <li class="user-block__item  user-block__item--left">
-              <a class="user-block__link  user-block__link--profile" href="profile.html">Валентин Петухов</a>
-              <a class="user-block__link  iser-block__link--signout">Выйти</a>
+              <a class="user-block__link  user-block__link--login" href="profile.html">Валентин Петухов</a>
+              <button class="user-block__signout">Выйти</a>
             </li>
             <li class="user-block__item">
               <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
@@ -34,7 +35,7 @@
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item  main-nav__item--catalog">
             <a class="main-nav__link  main-nav__link--catalog" href="#">Каталог товаров</a>
             <ul class="sub-nav">
               <li class="sub-nav__item">
@@ -51,13 +52,13 @@
               </li>
             </ul>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item  main-nav__item--delivery">
             <a class="main-nav__link  main-nav__link--delivery" href="#">Доставка</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item  main-nav__item--guarantee">
             <a class="main-nav__link  main-nav__link--guarantee" href="#">Гарантия</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item  main-nav__item--contacts">
             <a class="main-nav__link  main-nav__link--contacts" href="#">Контакты</a>
           </li>
         </ul>
@@ -203,41 +204,45 @@
     
     
     <footer class="page-footer">
-      <div class="page-footer__wrapper-left">
-        <p class="page-footer__logo">Device</p>
-        <p class="page-footer__address">г. Москва, ул. Строителей, 15</p>        
-      </div>
-      
-      <div class="page-footer__wrapper-center"> 
-        <section class="page-footer__info">
-          <a class="page-footer__info-link" href="#">Доставка</a>
-          <a class="page-footer__info-link" href="#">Гарантия</a>
-          <a class="page-footer__info-link" href="#">Контакты</a>
-        </section>
-        <p class="footer-social">
-          <a href="#" class="footer-social__btn  footer-social__btn--fb">FaceBook</a>
-          <a href="#" class="footer-social__btn  footer-social__btn--inst">Instagram</a>
-          <a href="#" class="footer-social__btn  footer-social__btn--tw">Twitter</a>
-        </p>
-      </div> 
-      
-      <div class="page-footer__wrapper-right">
-        <section class="user-block user-block--narrow">
-          <ul class="user-block__list">
-            <li class="user-block__item">
-              <a class="user-block__link  user-block__link--login" href="#">Выйти</a>
-            </li>
-            <li class="user-block__item">
-              <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
-            </li>
-            <li class="user-block__item">
-              <a class="user-block__link  user-block__link--cart" href="#">Корзина</a>
-            </li>
-          </ul>
-        </section>        
-        <p class="page-footer__tel">Тел.: +7 (495) 495-95-95</p>        
-        <div class="page-footer__created">
-          <a class="page-footer__created-link" href="#"><img src="" width="" height="" alt="Логотип htmlacademy"></a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__wrapper-left">
+          <a class="page-footer__logo" href="#">Device</a>
+          <p class="page-footer__address">г. Москва, ул. Строителей, 15</p>        
+        </div>
+        
+        <div class="page-footer__wrapper-center"> 
+          <section class="page-footer__info">
+            <a class="page-footer__info-link" href="#">Доставка</a>
+            <a class="page-footer__info-link" href="#">Гарантия</a>
+            <a class="page-footer__info-link" href="#">Контакты</a>
+          </section>
+          <p class="footer-social">
+            <a href="#" class="footer-social__btn  footer-social__btn--fb">FaceBook</a>
+            <a href="#" class="footer-social__btn  footer-social__btn--inst">Instagram</a>
+            <a href="#" class="footer-social__btn  footer-social__btn--tw">Twitter</a>
+          </p>
+        </div> 
+        
+        <div class="page-footer__wrapper-right">
+          <section class="user-block user-block--narrow">
+            <ul class="user-block__list">
+              <li class="user-block__item">
+                <a class="user-block__link  user-block__link--white   user-block__link--white-login" href="#">Выйти</a>
+              </li>
+              <li class="user-block__item">
+                <a class="user-block__link  user-block__link--white  user-block__link--white-compare" href="#">Сравнить</a>
+              </li>
+              <li class="user-block__item">
+                <a class="user-block__link  user-block__link--white  user-block__link--white-cart" href="#">Корзина</a>
+              </li>
+            </ul>
+          </section>        
+          <p class="page-footer__tel">Тел.: +7 (495) 495-95-95</p>        
+          <div class="page-footer__created">
+            <a class="page-footer__created-link" href="#">
+              <img src="../img/htmlacademy.png" width="27" height="34" alt="Логотип htmlacademy">
+            </a>
+          </div>
         </div>
       </div>
     </footer>
