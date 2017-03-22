@@ -13,7 +13,7 @@
     float: left;
     width: 260px;
     min-height: 323px;
-    margin-right: 100px;
+    margin-right: 107px;
   }
   
   &__logo {
@@ -65,16 +65,17 @@
     float: left;
     width: 440px;
     min-height: 189px;
-    margin-right: 30px;
-    padding-top: 133px;;
+    padding-top: 133px;
+    margin-right: 23px;
   }
   
   &__info {
     width: 440px;
     float: left;
+    margin-bottom: 58px;
     
     &-link {
-      margin-left: 34px;
+      margin-right: 31px;
       
       font-weight: 800;
       font-size: 18px;
@@ -85,8 +86,18 @@
       text-decoration: none;
       letter-spacing: 3.7px;
       
-      &:first-of-type {
-        margin-left: 0;
+      transition: .15s;
+      
+      &:last-of-type {
+        margin-right: 0;
+      }
+      
+      &:hover {
+        opacity: .6;
+      }
+      
+      &:active {
+        opacity: .3;
       }
     }
   }
