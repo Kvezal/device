@@ -341,17 +341,17 @@
     <div class="map-big" id="map"></div>
     <form class="form-feedback" action="index.html" method="post">
       <button class="form-feedback__close" type="button"></button>
-      <div class="form-feedback__wrapper-name">
+      <div class="form-feedback__wrapper  form-feedback__wrapper--left">
         <label class="form-feedback__label" for="field-name">Ваше имя:</label>
-        <input class="form-feedback__input" type="text" name="name" id="field-name" placeholder="Представьтесь, пожалуйста">
+        <input class="form-feedback__input" type="text" name="name" id="field-name" placeholder="Представьтесь, пожалуйста" required>
       </div>
-      <div class="form-feedback__wrapper-email">
+      <div class="form-feedback__wrapper  form-feedback__wrapper--right">
         <label class="form-feedback__label" for="field-email">Ваш e-mail:</label>
-        <input class="form-feedback__input" type="text" name="name" id="field-email" placeholder="Для отправки ответа">
+        <input class="form-feedback__input" type="text" name="name" id="field-email" placeholder="Для отправки ответа" required>
       </div>
       <div class="form-feedback__wrapper-comment">
-        <label class="form-feedback__textarea" for="field-comment">Текст письма:</label>
-        <textarea class="form-feedback__textarea" name="" id="" placeholder="В свободной форме"></textarea>
+        <label class="form-feedback__label" for="field-comment">Текст письма:</label>
+        <textarea class="form-feedback__textarea" name="" id="" placeholder="В свободной форме" required></textarea>
       </div>
       <button class="form-feedback__btn btn" type="submit">Отправить</button>
     </form>
