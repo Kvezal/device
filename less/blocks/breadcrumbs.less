@@ -1,9 +1,55 @@
 .breadcrumbs {
   .list-clear-indent();
   
+  font-size: 0;
+  
   &__item {
+    position: relative;
+    
     display: inline-block;
+    margin-right: 18px;
+    padding-right: 20px;
     
     vertical-align: top;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      right: 0;
+      
+      box-sizing: border-box;
+      width: 5px;
+      height: 5px;
+      
+      border: 1px solid #000000;
+      border-bottom: none;
+      border-left: none;
+      
+      transform: rotate(45deg);
+    }
+    
+    &:last-of-type::before {
+      display: none;
+    }
+  }
+  
+  &__link {
+    
+    font-size: 14px;
+    line-height: 36px;
+    color: #000000;
+    text-decoration: none;
+    
+    opacity: .3;
+    transition-duration: .15s;
+    
+    &:hover {
+      opacity: .6;
+    }
+    
+    &:active {
+      opacity: .1;
+    }
   }
 }

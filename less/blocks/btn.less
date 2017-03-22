@@ -1,5 +1,6 @@
 .btn {
   position: relative;
+  z-index: 1;
   
   display: inline-block;
   box-sizing: content-box;
@@ -14,7 +15,10 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 3.7px;
+  letter-spacing: 3.7px;  
+  
+  background-color: transparent;
+  border: none;
   
   transition-duration: .2s;
   
@@ -24,8 +28,8 @@
   
   &::before {
     content: "";
-    position: absolute;
-    top: 5px;
+    position: absolute;    
+    top: 10px;
     left: 0;
     z-index: -1;
     
@@ -33,12 +37,13 @@
     height: 8px;
     
     background-color: #f0c52e;
+    transform: translateY(-53%);
   
     transition-duration: .2s;
   }
   
   &:hover::before {
     height: 200%;
-    transform: translateY(-40%);
+    transform: translateY(-53%);
   }
 }
