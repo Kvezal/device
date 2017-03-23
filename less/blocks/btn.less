@@ -19,6 +19,7 @@
   
   background-color: transparent;
   border: none;
+  outline: none;
   
   transition-duration: .2s;
   
@@ -42,7 +43,8 @@
     transition-duration: .2s;
   }
   
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     height: 200%;
     transform: translateY(-53%);
   }

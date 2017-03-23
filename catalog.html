@@ -10,7 +10,7 @@
   <body>
     <header class="page-header page-header--inner">
       <div class="page-header__logo">
-        <b class="page-header__title">Device</b>
+        <a class="page-header__title" href="index.html">Device</a>
       </div>
       <div class="page-header__wrapper-top">
         <form class="form-search" action="index.html">
@@ -40,7 +40,7 @@
             <ul class="sub-nav">
               <li class="sub-nav__item">
                 <a class="sub-nav__link" href="#">Виртуальная реальность</a>
-                <a class="sub-nav__link" href="#">Моноподы для селфи</a>
+                <a class="sub-nav__link  sub-nav__link--active">Моноподы для селфи</a>
                 <a class="sub-nav__link" href="#">Экшн-камеры</a>
               </li>
               <li class="sub-nav__item">
@@ -72,7 +72,7 @@
         <h1 class="main__title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Главная</a>
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="#">Каталог товаров</a>
@@ -147,45 +147,55 @@
             
             <section class="catalog">
               <article class="catalog__item">
-                <img src="" width="360" height="380" alt="Любительская селфи-палка">
+                <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                 <div class="catalog__overlay">
                   <button class="catalog__cart-btn  btn">В корзину</button>
                   <button class="catalog__compare-btn">Добавить к сравнению</button>
                 </div>
-                <a href="" class="catalog__link">Любительская селфи-палка</a>
-                <span class="catalog__price">500 руб.</span>
+                <div class="catalog__wrapper">
+                  <a class="catalog__link" href="#">Любительская селфи-палка</a>
+                  <span class="catalog__price">500 руб.</span>
+                </div>
               </article>
               <article class="catalog__item">
-                <img src="" width="360" height="380" alt="Профессиональная селфи-палка">
+                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                 <div class="catalog__overlay">
                   <button class="catalog__cart-btn  btn">В корзину</button>
                   <button class="catalog__compare-btn">Добавить к сравнению</button>
                 </div>
-                <a href="" class="catalog__link">Профессиональная селфи-палка</a>
-                <span class="catalog__price">1500 руб.</span>
+                <div class="catalog__wrapper">
+                  <a class="catalog__link" href="#">
+                    Профессиональная<br>
+                    селфи-палка</a>
+                  <span class="catalog__price">1 500 руб.</span>
+                </div>
               </article>
               <article class="catalog__item">
-                <img src="" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 <div class="catalog__overlay">
                   <button class="catalog__cart-btn  btn">В корзину</button>
                   <button class="catalog__compare-btn">Добавить к сравнению</button>
                 </div>
-                <a href="" class="catalog__link">Непотопляемая селфи-палка</a>
-                <span class="catalog__price">2500 руб.</span>
+                <div class="catalog__wrapper">
+                  <a class="catalog__link" href="#">Непотопляемая селфи-палка</a>
+                  <span class="catalog__price">2 500 руб.</span>
+                </div>
               </article>
               <article class="catalog__item">
-                <img src="" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 <div class="catalog__overlay">
                   <button class="catalog__cart-btn  btn">В корзину</button>
                   <button class="catalog__compare-btn">Добавить к сравнению</button>
                 </div>
-                <a href="" class="catalog__link">Селфи-палка «Следуй за мной»</a>
-                <span class="catalog__price">4900 руб.</span>
+                <div class="catalog__wrapper">
+                  <a class="catalog__link" href="#">Селфи-палка «Следуй за мной»</a>
+                  <span class="catalog__price">4 900 руб.</span>
+                </div>
               </article>
             </section>
             <div class="pagination">
-              <a class="pagination__link  pagination__link--prew" href="#">Назад</a>
-              <a class="pagination__link" href="#">1</a>
+              <a class="pagination__link  pagination__link--prew   pagination__link--disabled">Назад</a>
+              <a class="pagination__link  pagination__link--active">1</a>
               <a class="pagination__link" href="#">2</a>
               <a class="pagination__link" href="#">3</a>
               <a class="pagination__link  pagination__link--next" href="#">Вперед</a>
@@ -200,7 +210,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__wrapper-left">
-          <a class="page-footer__logo" href="#">Device</a>
+          <a class="page-footer__logo" href="index.html">Device</a>
           <p class="page-footer__address">г. Москва, ул. Строителей, 15</p>        
         </div>
         
