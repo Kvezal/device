@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "description": "Личный проект «Девайс»",
+  "author": "Максим Воропай",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kvezal/device.git"
+  },
+  "homepage": "https://kvezal.github.io/device",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x",
+    "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^6.7.7",
-    "browser-sync": "^2.18.8",
-    "del": "^3.0.0",    
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
     "eslint": "4.2.0",
     "eslint-config-htmlacademy": "0.3.x",
     "gulp": "^3.9.1",
@@ -16,23 +22,19 @@
     "gulp-imagemin": "^3.3.0",
     "gulp-less": "^3.3.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-postcss": "^6.3.0",
+    "gulp-postcss": "^6.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^3.0.0",
     "pump": "^1.0.2",
-    "run-sequence": "^2.2.0"
+    "run-sequence": "^1.2.2"
   },
   "scripts": {
     "test": "editorconfig-cli",
     "build": "gulp build",
-    "start": "npm run build && gulp serve"
+    "start": "npm run build && gulp serve",
+    "pub": "npm run build && gulp deploy"
   },
-  "editorconfig-cli": [
-    "*.html",
-    "*.json",
-    "*.js",
-    "js/**/*.js",
-    "img/**/*.svg",
-    "less/**/*.less"
-  ]
+  "engines": {
+    "node": "^6.10"
+  }
 }

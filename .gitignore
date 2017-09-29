@@ -4,3 +4,4 @@ css/
 less/helper.less
 build/
 .publish
+npm-debug.log
