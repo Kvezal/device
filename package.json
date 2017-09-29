@@ -4,18 +4,28 @@
   "private": true,
   "description": "Личный проект «Девайс»",
   "devDependencies": {
-    "autoprefixer": "6.7.x",
-    "browser-sync": "2.18.8",
-    "gulp": "3.9.1",
-    "gulp-less": "3.3.0",
-    "gulp-plumber": "1.1.0",
-    "gulp-postcss": "6.3.0",
-    "@htmlacademy/editorconfig-cli": "0.1.x"
+    "@htmlacademy/editorconfig-cli": "0.1.x",
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.8",
+    "del": "^3.0.0",    
+    "eslint": "4.2.0",
+    "eslint-config-htmlacademy": "0.3.x",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-less": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2",
+    "run-sequence": "^2.2.0"
   },
   "scripts": {
     "test": "editorconfig-cli",
-    "build": "gulp style",
-    "start": "gulp serve"
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "editorconfig-cli": [
     "*.html",

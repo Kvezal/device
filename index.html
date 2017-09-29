@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Device | Главная</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
-  
+
   <body>
     <header class="page-header">
       <div class="page-header__logo">
@@ -61,27 +60,27 @@
             <a class="main-nav__link  main-nav__link--contacts" href="#">Контакты</a>
           </li>
         </ul>
-      </nav>      
+      </nav>
     </header>
-    
-    
-    
+
+
+
     <main>
       <section class="promo-slider">
           <input class="promo-slider__toggle  promo-slider__toggle--1" type="radio" name="promo-slider-toggle" id="promo-slider-toggle-1" checked>
           <input class="promo-slider__toggle  promo-slider__toggle--2" type="radio" name="promo-slider-toggle" id="promo-slider-toggle-2">
           <input class="promo-slider__toggle  promo-slider__toggle--3" type="radio" name="promo-slider-toggle" id="promo-slider-toggle-3">
-          
+
           <div class="promo-slider__control">
             <label class="promo-slider__label  promo-slider__label--1" for="promo-slider-toggle-1"></label>
             <label class="promo-slider__label  promo-slider__label--2" for="promo-slider-toggle-2"></label>
             <label class="promo-slider__label  promo-slider__label--3" for="promo-slider-toggle-3"></label>
-          </div>     
-          
-          <div class="promo-slider__slide  promo-slider__slide--1">          
+          </div>
+
+          <div class="promo-slider__slide  promo-slider__slide--1">
             <div class="promo-slider__wrapper  promo-slider__wrapper--left">
               <img class="promo-slider__img  promo-slider__img--1" src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
-            </div>          
+            </div>
             <div class="promo-slider__wrapper  promo-slider__wrapper--right">
               <b class="promo-slider__slogan">
                 Делай селфи,<br>
@@ -106,10 +105,10 @@
               </table>
             </div>
           </div>
-          <div class="promo-slider__slide  promo-slider__slide--2">          
+          <div class="promo-slider__slide  promo-slider__slide--2">
             <div class="promo-slider__wrapper  promo-slider__wrapper--left">
               <img class="promo-slider__img  promo-slider__img--2" src="img/slider-2.png" width="345" height="485" alt="Фитнесс-браслеты">
-            </div>          
+            </div>
             <div class="promo-slider__wrapper  promo-slider__wrapper--right">
               <b class="promo-slider__slogan">
                 Худеем<br>
@@ -126,13 +125,13 @@
                 <tr>
                   <td class="promo-slider__data-name">Без подзарядки</td>
                 </tr>
-              </table>          
+              </table>
             </div>
           </div>
-          <div class="promo-slider__slide  promo-slider__slide--3">          
+          <div class="promo-slider__slide  promo-slider__slide--3">
             <div class="promo-slider__wrapper  promo-slider__wrapper--left">
               <img class="promo-slider__img  promo-slider__img--3" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-            </div>          
+            </div>
             <div class="promo-slider__wrapper  promo-slider__wrapper--right">
               <b class="promo-slider__slogan">
                 Порхает как бабочка,
@@ -155,7 +154,7 @@
             </div>
           </div>
       </section>
-      
+
       <section class="categories">
         <a class="categories__link" href="#">
           <div class="categories__wrapper-icon">
@@ -194,13 +193,13 @@
           <span class="categories__name">Квадрокоптеры</span>
         </a>
       </section>
-      
+
       <section class="service-slider">
         <div class="service-slider__wrapper">
           <input class="service-slider__toggle  service-slider__toggle--1" type="radio" name="service-slider" id="service-slider-toggle-1" checked>
           <input class="service-slider__toggle  service-slider__toggle--2" type="radio" name="service-slider" id="service-slider-toggle-2">
           <input class="service-slider__toggle  service-slider__toggle--3" type="radio" name="service-slider" id="service-slider-toggle-3">
-          
+
           <ul class="service-slider__toggle-list">
             <li class="service-slider__toggle-item  service-slider__toggle-item--1">
               <label class="service-slider__toggle-label  btn  service-slider__toggle-label--1" for="service-slider-toggle-1">Доставка</label>
@@ -212,7 +211,7 @@
               <label class="service-slider__toggle-label  btn  service-slider__toggle-label--3" for="service-slider-toggle-3">Кредит</label>
             </li>
           </ul>
-          
+
           <ul class="service-slider__list">
             <li class="service-slider__item  service-slider__item--1">
               <h2 class="service-slider__title">Доставка</h2>
@@ -236,7 +235,7 @@
           </ul>
         </div>
       </section>
-      
+
       <section class="manufacturers">
         <ul class="manufacturers__list">
           <li class="manufacturers__item">
@@ -261,7 +260,7 @@
           </li>
         </ul>
       </section>
-      
+
       <section class="info">
         <section class="info__about-us">
           <h2 class="info__title">О нас</h2>
@@ -275,33 +274,33 @@
             <li class="info__transport-item">Деловые линии</li>
             <li class="info__transport-item">Автотрейдинг</li>
             <li class="info__transport-item">ЖелДорЭкспедиция</li>
-          </ul>              
+          </ul>
           <a class="info__btn  btn" href="#">Подробнее о нас</a>
         </section>
-        
+
         <section class="info__contacts">
           <h2 class="info__title">Контакты</h2>
           <p class="info__text">
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
-          <button class="map">
+          <button class="info__map">
             <img src="img/map.jpg" alt="Карта">
           </button>
-          <a class="info__btn  btn" href="#">Напишите нам</a>
+          <a class="info__btn  btn" href="#" id="write-us">Напишите нам</a>
         </section>
       </section>
     </main>
-    
-    
-    
+
+
+
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__wrapper-left">
           <a class="page-footer__logo" href="#">Device</a>
-          <p class="page-footer__address">г. Москва, ул. Строителей, 15</p>        
+          <p class="page-footer__address">г. Москва, ул. Строителей, 15</p>
         </div>
-        
-        <div class="page-footer__wrapper-center"> 
+
+        <div class="page-footer__wrapper-center">
           <section class="page-footer__info">
             <a class="page-footer__info-link" href="#">Доставка</a>
             <a class="page-footer__info-link" href="#">Гарантия</a>
@@ -312,8 +311,8 @@
             <a href="#" class="footer-social__btn  footer-social__btn--inst">Instagram</a>
             <a href="#" class="footer-social__btn  footer-social__btn--tw">Twitter</a>
           </p>
-        </div> 
-        
+        </div>
+
         <div class="page-footer__wrapper-right">
           <section class="user-block user-block--narrow">
             <ul class="user-block__list">
@@ -327,8 +326,8 @@
                 <a class="user-block__link  user-block__link--white  user-block__link--white-cart" href="#">Корзина</a>
               </li>
             </ul>
-          </section>        
-          <p class="page-footer__tel">Тел.: +7 (495) 495-95-95</p>        
+          </section>
+          <p class="page-footer__tel">Тел.: +7 (495) 495-95-95</p>
           <div class="page-footer__created">
             <a class="page-footer__created-link" href="#">
               <img src="img/htmlacademy.png" width="27" height="34" alt="Логотип htmlacademy">
@@ -337,10 +336,15 @@
         </div>
       </div>
     </footer>
-    
-    <div class="map-big" id="map"></div>
+
+    <div class="map" id="map">
+      <button class="btn__close" id="map-close"></button>
+      <iframe src="https://api-maps.yandex.ru/frame/v1/-/C6AAnCLN" width="960" height="553" frameborder="0"></iframe>
+    </div>
+
+
     <form class="form-feedback" action="index.html" method="post">
-      <button class="form-feedback__close" type="button"></button>
+      <button class="btn__close" type="button"></button>
       <div class="form-feedback__wrapper  form-feedback__wrapper--left">
         <label class="form-feedback__label" for="field-name">Ваше имя:</label>
         <input class="form-feedback__input" type="text" name="name" id="field-name" placeholder="Представьтесь, пожалуйста" required>
@@ -351,11 +355,13 @@
       </div>
       <div class="form-feedback__wrapper-comment">
         <label class="form-feedback__label" for="field-comment">Текст письма:</label>
-        <textarea class="form-feedback__textarea" name="" id="" placeholder="В свободной форме" required></textarea>
+        <textarea class="form-feedback__textarea" name="field-comment" id="field-comment" placeholder="В свободной форме" minlength="30" maxlength="100" required></textarea>
       </div>
-      <button class="form-feedback__btn btn" type="submit">Отправить</button>
+      <button class="btn  form-feedback__btn" type="submit">Отправить</button>
     </form>
-    
-    
+
+    <script src="js-min/utils.min.js"></script>
+    <script src="js-min/map.min.js"></script>
+    <script src="js-min/feedback.min.js"></script>
   </body>
 </html>
